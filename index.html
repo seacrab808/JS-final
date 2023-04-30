@@ -1,0 +1,84 @@
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>greeting</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <div class="login-screen">
+        <!--로그인 화면-->
+        <h1 id="login">MOTEMOTE PLANNER</h1>
+        <!--로그인폼 입력칸-->
+        <form id="login-form" class="hidden">
+            <input 
+                required
+                maxlength="15" 
+                type="text" 
+                placeholder="What is your name?">
+            <input type="submit" value="Log In" />
+            <a href="greeting.html"></a>
+        </form>
+    </div>
+
+    <!--로그인폼 입력 후 보여지는 내용-->
+    <h2 id="greeting" class="hidden"></h2>
+
+
+    <hr id="first" class="hidden">
+
+
+    <div id="top-class" >
+        <!--시간-->
+        <h2 id="clock" class="hidden"></h2>
+        <!--카운트다운 (코드 변경해야함)-->
+        <h3 id="count" class="hidden"></h3>
+    </div>
+
+
+    <hr id="second" class="hidden">
+
+
+    <div id="middle-class" class="hidden">
+        <!--글귀-->
+        <div id="quote" class="hidden">
+            <span></span>
+            <br>
+            <span></span>
+        </div>
+         <!--날씨 정보-->
+        <div id="weather" class="hidden">
+            <span></span><br>
+            <span></span>
+        </div>
+    </div>
+
+
+    <hr id="third" class="hidden">
+
+
+    <div id="todolist" class="hidden">< TO DO LIST ></div>
+
+    <div class="todo">
+        <div class="todo__list">
+        <!--투두 입력 칸-->
+        <form id="todo-form" class="hidden">
+            <input type="text" placeholder="Create tasks" required>  
+        </form>
+        <ul id="todo-list"></ul>
+        </div>
+        <!--랜덤 사진 넣을 공간-->
+        <div id="photo" class="hidden"></div>
+    </div>
+    
+
+    <script src="js/greetings.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/quotes.js"></script>
+    <script src="js/photo.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="js/count.js"></script>
+</body>
+</html>
